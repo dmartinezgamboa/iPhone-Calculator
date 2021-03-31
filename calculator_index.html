@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone Calculator</title>
+    <link rel="stylesheet" href="./calculator_style.css" />
+</head>
+<body>
+    <section class="calculator">
+        <!-- TODO: make empty row above display cleaner -->
+        <row class="display-row whole"></row> 
+        <row class="display-row whole"></row>
+        <row class="display-row whole display">0</row>
+        <row class="button-row">
+            <button class="calc-button special quarter">AC</button>
+            <button class="calc-button special quarter">+/-</button>   
+            <button class="calc-button special quarter">%</button>
+            <button class="calc-button operator quarter">÷</button>
+        </row>
+        <row class="button-row">
+            <button class="calc-button normal quarter">7</button>
+            <button class="calc-button normal quarter">8</button>
+            <button class="calc-button normal quarter">9</button>
+            <button class="calc-button operator quarter">×</button>
+        </row>
+        <row class="button-row">
+            <button class="calc-button normal quarter">4</button>
+            <button class="calc-button normal quarter">5</button>
+            <button class="calc-button normal quarter">6</button>
+            <button class="calc-button operator quarter">-</button>
+        </row>
+        <row class="button-row">
+            <button class="calc-button normal quarter">1</button>
+            <button class="calc-button normal quarter">2</button>
+            <button class="calc-button normal quarter">3</button>
+            <button class="calc-button operator quarter">+</button>
+        </row>
+        <row class="button-row">
+            <button class="calc-button normal half">0</button>
+            <button class="calc-button normal quarter">.</button>
+            <button class="calc-button operator quarter">=</button>
+        </row>
+    </section>
+    <script type="text/javascript" src="./calculator_script.js"></script>
+</body>
+</html>

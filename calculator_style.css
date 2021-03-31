@@ -1,0 +1,103 @@
+/* 
+TODO: re-classify rows? to make empty space above current .display-row more cleaner cascade
+TODO: add class for highlighted queuedOperation, for JS to apply on and off
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 400px;   /* aspect ratio must be 1:2 or all buttons will be skewed, */ 
+    height: 800px;      /* flex values only work for this ratio */
+}
+
+.display-row {
+    display: flex;
+    flex: 1;
+    align-items: flex-end;
+    justify-content: flex-end;
+    
+}
+
+.display {
+    color: #ffffff;
+    font-size: 570%;
+    font-weight: lighter;
+    font-family: Helvetica;
+}
+
+.button-row {
+    display: flex;
+    flex: 1;
+    border: black;
+}
+
+.calc-button {
+    color: #ffffff;
+    align-items: stretch;
+    margin: 2%;
+    border: none;
+    cursor: pointer;
+    font-size: 230%;
+    font-weight: lighter;
+    transition: 0.5s;
+}
+
+.normal {
+    background-color: #333333;
+}
+
+.normal:hover {
+    background-color: #727272; 
+}
+
+.special {
+    color: #080808;
+    background-color: #a5a5a5;
+}
+
+.special:hover {
+    background-color: #dfdfdf;
+}
+
+.operator {
+    background-color: #ffa00b;
+    font-size: 280%;
+}
+
+.operator:hover {
+    color: #ffa00b;
+    background-color: #ffffff;
+}
+
+.quarter {
+    width: 25%;
+    border-radius: 50%;
+}
+.half {
+    /* weird width, due to losing margin for taking up more space, 
+    this lines up buttons */
+    width: 54%;     
+    border-radius: 25% / 50%;
+    justify-content: flex-start;
+    text-align: left;
+    padding-left: 8.5%;
+}
+
+.three-quarter {
+    width: 75%; /* needs adjustment due to buttons not lining up, see .half */
+    border-radius: 20% / 60%;
+}
+
+.whole {
+    width: 100%; /* needs adjustment due to buttons not lining up, see .half */
+}
